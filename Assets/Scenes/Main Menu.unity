@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33148a2fa737aa4799eb3fead9013cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: Puzzle Game 1
+  startSceneName: Instructions
   Menu: Main Menu
   Credits: Instructions
   soundSource: {fileID: 982404846}
