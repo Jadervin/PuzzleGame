@@ -767,7 +767,7 @@ MonoBehaviour:
   Credits: Instructions
   soundSource: {fileID: 982404846}
   menuClick: {fileID: 8300000, guid: 4e2ad80d21e37de44b0cb46f3d13f750, type: 3}
-  clickTimer: 1
+  clickTimer: 2
 --- !u!4 &1089188832
 Transform:
   m_ObjectHideFlags: 0
