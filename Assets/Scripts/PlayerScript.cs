@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerScript : EntityScript
 {
-    public GameObject particle;
-    
+    //public GameObject particle;
+    public float force = 3;
+
     //public string hurtingTag= "Enemy";
     public float invincibilityTime = 3;
     bool isInvincibile = false;
@@ -17,30 +18,21 @@ public class PlayerScript : EntityScript
 
     private void Update()
     {
-        ChangeWeapons();
-    }
-
-
-    void ChangeWeapons()
-    {
-        float dir = Input.GetAxis("Mouse ScrollWheel");
         
+    }
 
-        if (dir > 0)
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag=="crate")
         {
-            
-
+            this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
 
         }
-        else if (dir < 0)
-        {
-            
 
-        }
 
 
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
