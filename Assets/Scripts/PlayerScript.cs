@@ -10,6 +10,10 @@ public class PlayerScript : EntityScript
     //public string hurtingTag= "Enemy";
     public float invincibilityTime = 3;
     bool isInvincibile = false;
+
+    public GameObject cratePrefabChild;
+    public Transform playerParent;
+
     new private void Start()
     {
         base.Start();
@@ -22,10 +26,14 @@ public class PlayerScript : EntityScript
     }
 
 
+   
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag=="crate")
+        if (collision.gameObject.tag == "Crate")
         {
+
+            
             this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
 
         }
@@ -34,6 +42,19 @@ public class PlayerScript : EntityScript
 
     }
 
+    /*
+     public void BoxPush(Transform newParent)
+     {
+        
+        cratePrefabChild.transform.SetParent(newParent);
+        
+       
+        cratePrefabChild.transform.SetParent(newParent, false);
+
+       
+        cratePrefabChild.transform.SetParent(null);
+     }
+    */
     private void OnTriggerEnter(Collider other)
     {
         
