@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8345330905089766178}
   - component: {fileID: 7210552861891852536}
   - component: {fileID: 7210552861891852539}
+  - component: {fileID: 1222950913656053299}
   m_Layer: 0
   m_Name: Metal Crate (1)
   m_TagString: Crate
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7552657856728224503}
-  m_LocalRotation: {x: -0.50000006, y: -0.49999994, z: -0.49999997, w: 0.5}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 515.7, y: 2, z: -106.7}
   m_LocalScale: {x: 11.89, y: 11.889999, z: 10.216924}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!33 &6067586163120932840
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -112,3 +113,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.601572, y: 0.6001844, z: 0.70008284}
   m_Center: {x: 0.014361791, y: -0.004512366, z: 0.3500983}
+--- !u!114 &1222950913656053299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7552657856728224503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b41f40a2b8da894db583a84b0d3e5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  isParented: 0
