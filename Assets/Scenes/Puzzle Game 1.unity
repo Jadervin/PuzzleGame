@@ -774,6 +774,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.601572, y: 0.6001844, z: 0.70008284}
   m_Center: {x: 0.014361791, y: -0.004512366, z: 0.3500983}
+--- !u!114 &689241203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689241200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b41f40a2b8da894db583a84b0d3e5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPushed: 0
+  player: {fileID: 885558713}
 --- !u!1 &742811285
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tokay.Animation
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14180a3b8f88dcf4e92bc7b14a03c80e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14180a3b8f88dcf4e92bc7b14a03c80e, type: 3}
 --- !u!1 &885558708 stripped
@@ -984,6 +1002,7 @@ MonoBehaviour:
   invincibilityTime: 3
   cratePrefabChild: {fileID: 0}
   playerParent: {fileID: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &885558714
 Rigidbody:
   m_ObjectHideFlags: 0

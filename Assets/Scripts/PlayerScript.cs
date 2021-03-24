@@ -14,15 +14,17 @@ public class PlayerScript : EntityScript
     public GameObject cratePrefabChild;
     public Transform playerParent;
 
+    public Vector3 lastPosition;
+
     new private void Start()
     {
         base.Start();
        
     }
 
-    private void Update()
+    private void LateUpdate()
     {
-        
+        lastPosition = transform.position;
     }
 
 
@@ -34,7 +36,7 @@ public class PlayerScript : EntityScript
         {
 
             
-            this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
+            //this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
 
         }
 
