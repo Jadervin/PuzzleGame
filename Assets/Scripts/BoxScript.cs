@@ -14,6 +14,8 @@ public class BoxScript : MonoBehaviour
     private void Start()
     {
         originalParent = transform.parent;
+
+        buttonAnim = GetComponent<Animator>();
     }
 
     private void Update()
