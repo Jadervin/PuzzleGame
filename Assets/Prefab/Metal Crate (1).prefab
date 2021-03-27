@@ -127,4 +127,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isParented: 0
-  buttonAnim: {fileID: 0}
+  tongue: {fileID: 0}
+  isTongueParented: 0

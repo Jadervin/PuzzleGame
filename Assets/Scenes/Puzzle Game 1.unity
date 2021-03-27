@@ -807,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tongue
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 061de82a9a4f39344972f793c66d86e2, type: 3}
+      propertyPath: m_TagString
+      value: Tongue
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 061de82a9a4f39344972f793c66d86e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5208762
@@ -845,6 +849,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 061de82a9a4f39344972f793c66d86e2, type: 3}
+--- !u!4 &735365444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 061de82a9a4f39344972f793c66d86e2, type: 3}
+  m_PrefabInstance: {fileID: 735365443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &735365445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 061de82a9a4f39344972f793c66d86e2, type: 3}
+  m_PrefabInstance: {fileID: 735365443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &735365446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735365445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a79112ad54e6f7499af2c63b037acb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &742811285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,11 +1811,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1582226487 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8075766753311586040, guid: 94e5571a97d33524190d9b9c8927556d, type: 3}
-  m_PrefabInstance: {fileID: 8075766753311586038}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1739216913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,9 +2561,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 885558712}
     - target: {fileID: 1222950913656053299, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
-      propertyPath: buttonAnim
+      propertyPath: tongue
       value: 
-      objectReference: {fileID: 1582226487}
+      objectReference: {fileID: 735365444}
     - target: {fileID: 7177540311414540365, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2578,10 +2606,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7177540311414540365, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7210552861891852539, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7552657856728224503, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}

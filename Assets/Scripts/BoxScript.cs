@@ -9,6 +9,11 @@ public class BoxScript : MonoBehaviour
     Vector3 lastPlayerPosition;
     Transform originalParent;
 
+    public Transform tongue;
+    public bool isTongueParented = false;
+    Vector3 lastTonguePosition;
+    Transform originalTongueParent;
+
     //public Animator buttonAnim;
 
 
@@ -37,6 +42,23 @@ public class BoxScript : MonoBehaviour
 
             lastPlayerPosition = player.position;
         }
+
+        if (isTongueParented)
+        {
+            Vector3 movementVec = tongue.position - lastTonguePosition;
+            Vector3 directionVec = transform.position - tongue.position;
+
+            if (movementVec.x * directionVec.x < 0
+                || movementVec.z * directionVec.z < 0)
+            {
+                isTongueParented = false;
+                transform.SetParent(originalTongueParent);
+            }
+
+
+            lastTonguePosition = tongue.position;
+        }
+
     }
 
     //The player must have a triger around them. Make sure its big enough so the 
@@ -51,7 +73,13 @@ public class BoxScript : MonoBehaviour
             lastPlayerPosition = player.position;
         }
 
-       
+       if (!isTongueParented&& collider.CompareTag("Tongue"))
+        {
+            tongue = collider.transform;
+            transform.SetParent(tongue);
+            isTongueParented = true;
+            lastTonguePosition = tongue.position;
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
