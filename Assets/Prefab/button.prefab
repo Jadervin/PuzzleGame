@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonAnim: {fileID: 8075766753311586040}
+  spawnPosition: {fileID: 3971827722121972017, guid: 2b79006fb7e4ca54e8bc9fa689275161, type: 3}
+  keyPrefab: {fileID: 1462112137170038177, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
 --- !u!65 &1582226490
 BoxCollider:
   m_ObjectHideFlags: 0

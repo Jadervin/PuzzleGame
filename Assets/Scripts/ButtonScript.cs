@@ -45,7 +45,6 @@ public class ButtonScript : MonoBehaviour
     {
         if (collision.gameObject.tag=="Crate")
         {
-
             buttonAnim.SetBool("ButtonPress", true);
             Debug.Log("Animation Bool Play");
             GameObject temp = 
