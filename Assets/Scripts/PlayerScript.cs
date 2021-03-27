@@ -11,8 +11,7 @@ public class PlayerScript : EntityScript
     public float invincibilityTime = 3;
     bool isInvincibile = false;
 
-    public GameObject cratePrefabChild;
-    public Transform playerParent;
+    
 
     public Vector3 lastPosition;
 
@@ -32,34 +31,16 @@ public class PlayerScript : EntityScript
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Crate")
-        {
-
-            
-            //this.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
-
-        }
-
 
 
     }
 
-    /*
-     public void BoxPush(Transform newParent)
-     {
-        
-        cratePrefabChild.transform.SetParent(newParent);
-        
-       
-        cratePrefabChild.transform.SetParent(newParent, false);
-
-       
-        cratePrefabChild.transform.SetParent(null);
-     }
-    */
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Key"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 
     IEnumerator playerInvincibility()

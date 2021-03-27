@@ -6,6 +6,9 @@ public class ButtonScript : MonoBehaviour
 {
     public Animator buttonAnim;
 
+    public Transform spawnPosition;
+    public GameObject keyPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,10 +48,14 @@ public class ButtonScript : MonoBehaviour
 
             buttonAnim.SetBool("ButtonPress", true);
             Debug.Log("Animation Bool Play");
+            GameObject temp = 
+                Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
 
             //buttonAnim.SetTrigger("Press");
            //Debug.Log("Animation Trigger Play");
         }
+
+        
     }
     
 
