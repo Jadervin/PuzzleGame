@@ -22,7 +22,7 @@ public class BoxScript : MonoBehaviour
         originalParent = transform.parent;
         
         //buttonAnim = GetComponent<Animator>();
-        Debug.Log("Found Animator");
+        
     }
 
     private void Update()

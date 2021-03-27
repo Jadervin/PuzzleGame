@@ -10,7 +10,7 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         buttonAnim = GetComponent<Animator>();
-        
+        Debug.Log("Found Animator");
     }
 
     // Update is called once per frame
