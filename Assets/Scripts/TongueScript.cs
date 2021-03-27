@@ -26,11 +26,14 @@ public class TongueScript : MonoBehaviour
             tongueAnim.SetBool("IsStretched", true);
             Debug.Log("Tongue Stretched");
         }
-        else if (!Input.GetKeyDown("space"))
+
+        
+        else if (Input.GetKeyDown("tab"))
         {
             tongueAnim.SetBool("IsStretched", false);
             Debug.Log("Tongue De-Stretched");
         }
+        
     }
 
     public void TongueStretchAttack()
