@@ -127,3 +127,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isParented: 0
+  buttonAnim: {fileID: 0}

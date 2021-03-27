@@ -8,14 +8,16 @@ public class BoxScript : MonoBehaviour
     public bool isParented = false;
     Vector3 lastPlayerPosition;
     Transform originalParent;
-    public Animator buttonAnim;
+
+    //public Animator buttonAnim;
 
 
     private void Start()
     {
         originalParent = transform.parent;
-
-        buttonAnim = GetComponent<Animator>();
+        
+        //buttonAnim = GetComponent<Animator>();
+        Debug.Log("Found Animator");
     }
 
     private void Update()
@@ -48,13 +50,12 @@ public class BoxScript : MonoBehaviour
             isParented = true;
             lastPlayerPosition = player.position;
         }
+
+       
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Button"))
-        {
-            buttonAnim.SetTrigger("Button Press");
-        }
+        
     }
 }
