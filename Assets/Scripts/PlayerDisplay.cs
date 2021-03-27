@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerDisplay : MonoBehaviour
 {
-    //public Text CurrencyDisplay;
+    public Text KeyDisplay;
     public Transform healthParent;
     public Transform healthIconPrefab;
     public PlayerScript player;
@@ -28,7 +28,8 @@ public class PlayerDisplay : MonoBehaviour
             DisplayHealth();
 
         }
-        //CurrencyDisplay.text = CurrencyScript.Instance.balance.ToString();
+
+        KeyDisplay.text = KeyCollect.Instance.currentkeyAmount.ToString();
     }
 
     void DisplayHealth()

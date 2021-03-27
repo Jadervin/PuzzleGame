@@ -10,7 +10,7 @@ public class PlayerScript : EntityScript
     //public string hurtingTag= "Enemy";
     public float invincibilityTime = 3;
     bool isInvincibile = false;
-
+    public int keyAmount;
     
 
     public Vector3 lastPosition;
@@ -39,6 +39,7 @@ public class PlayerScript : EntityScript
     {
         if (other.CompareTag("Key"))
         {
+            GetKey();
             Destroy(other.gameObject);
         }
     }
@@ -48,5 +49,10 @@ public class PlayerScript : EntityScript
         isInvincibile = true;
         yield return new WaitForSeconds(invincibilityTime);
         isInvincibile = false;
+    }
+
+    void GetKey()
+    {
+        KeyCollect.Instance.currentkeyAmount += KeyCollect.Instance.getKeyAmount;
     }
 }

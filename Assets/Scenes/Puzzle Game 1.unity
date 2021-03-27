@@ -1094,8 +1094,8 @@ GameObject:
   - component: {fileID: 1267468983}
   - component: {fileID: 1267468982}
   - component: {fileID: 1267468981}
-  - component: {fileID: 1267468980}
   - component: {fileID: 1267468979}
+  - component: {fileID: 1267468980}
   - component: {fileID: 1267468985}
   m_Layer: 5
   m_Name: Canvas
@@ -1314,6 +1314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03516e9c0bdd29e4cb4428d13541f8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KeyDisplay: {fileID: 2131984676}
   healthParent: {fileID: 2024285826}
   healthIconPrefab: {fileID: 559428373604746068, guid: 0d8361d664c4bf041ba57d4ae9ec961b, type: 3}
   player: {fileID: 885558713}
@@ -2165,7 +2166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Key
+  m_Text: 0
 --- !u!222 &2131984677
 CanvasRenderer:
   m_ObjectHideFlags: 0
