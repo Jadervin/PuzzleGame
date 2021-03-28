@@ -14,6 +14,7 @@ TagManager:
   - blue crate
   - red crate
   - green crate
+  - door
   layers:
   - Default
   - TransparentFX

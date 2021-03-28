@@ -18,10 +18,20 @@ public class PlayerScript : EntityScript
 
     public KeyCollect collect;
 
+    public GameObject door;
+
     new private void Start()
     {
         base.Start();
        
+    }
+
+    private void Update()
+    {
+        if (collect.currentkeyAmount==1)
+        {
+            Destroy(door);
+        }
     }
 
     private void LateUpdate()
