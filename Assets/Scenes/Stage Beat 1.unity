@@ -352,7 +352,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.386395, g: 0.19215688, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.19215688, g: 0.4745098, b: 0.43242195, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33148a2fa737aa4799eb3fead9013cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: Puzzle Game 1
+  startSceneName: Puzzle Game 2
   Menu: Main Menu
   Credits: Credits
   soundSource: {fileID: 1365908181}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 1693029923}
   - component: {fileID: 1693029922}
   m_Layer: 5
-  m_Name: You Win
+  m_Name: Stage Beat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

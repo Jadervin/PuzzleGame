@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzzle Game 1.unity
     guid: e9f3d2f513210664e8c7aec29df381e0
   - enabled: 1
+    path: Assets/Scenes/Stage Beat 1.unity
+    guid: 79249430663773549b5da771cc331c75
+  - enabled: 1
+    path: Assets/Scenes/Puzzle Game 2.unity
+    guid: 72600fd1c428dce41b83a1692beaecbe
+  - enabled: 1
+    path: Assets/Scenes/Stage Beat 2.unity
+    guid: b9bac6b2313225f4f9b7e8d03b213a61
+  - enabled: 1
+    path: Assets/Scenes/Puzzle Game 3.unity
+    guid: 6247db6c273fba7459657fb0651b1195
+  - enabled: 1
     path: Assets/Scenes/You Lose.unity
     guid: 1c2b4cf3db0adfa4fabc9d19781d6333
   - enabled: 1

@@ -30,7 +30,7 @@ public class PlayerScript : EntityScript
 
     private void Update()
     {
-        if (collect.currentkeyAmount==3)
+        if (collect.currentkeyAmount>=3)
         {
             Destroy(door);
         }
