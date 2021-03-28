@@ -20,6 +20,7 @@ public class PlayerScript : EntityScript
     public KeyCollect collect;
 
     public GameObject door;
+    public string youWin;
 
     new private void Start()
     {
@@ -59,7 +60,7 @@ public class PlayerScript : EntityScript
 
         if (other.CompareTag("Win"))
         {
-            
+            SceneManager.LoadScene(youWin);
         }
     }
 

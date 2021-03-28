@@ -3146,8 +3146,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993237211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 498.74, y: -0, z: 31}
-  m_LocalScale: {x: 287.7719, y: 1.7500868, z: 508.71408}
+  m_LocalPosition: {x: 498.74, y: -0, z: 56.59}
+  m_LocalScale: {x: 287.77203, y: 1.7500868, z: 559.8992}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3487,7 +3487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da05f9a1f2e6e9e4ba6f902c2e2586db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 244.28831
+      value: 313.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da05f9a1f2e6e9e4ba6f902c2e2586db, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3529,6 +3529,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Win
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: da05f9a1f2e6e9e4ba6f902c2e2586db, type: 3}
+      propertyPath: m_TagString
+      value: Win
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da05f9a1f2e6e9e4ba6f902c2e2586db, type: 3}
 --- !u!1 &2059926868 stripped
@@ -3544,7 +3548,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059926868}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.047316, y: 4.587181, z: 2.047316}
@@ -4010,6 +4014,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 248901997}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: youWin
+      value: You Win
+      objectReference: {fileID: 0}
     - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
       propertyPath: m_RootOrder
       value: 4
