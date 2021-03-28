@@ -13,7 +13,7 @@ public class MainMenuScript : MonoBehaviour
     public AudioSource soundSource;
     public AudioClip menuClick;
 
-    public float clickTimer = 2;
+    public float clickTimer = 10;
 
     public void StartPressed()
     {

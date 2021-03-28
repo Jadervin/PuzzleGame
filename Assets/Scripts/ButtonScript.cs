@@ -6,6 +6,7 @@ public class ButtonScript : MonoBehaviour
 {
     public Animator buttonAnim;
 
+    public ParticleSystem spawn;
     public Transform spawnPosition;
     public GameObject keyPrefab;
 
@@ -54,6 +55,7 @@ public class ButtonScript : MonoBehaviour
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
+
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
             }
