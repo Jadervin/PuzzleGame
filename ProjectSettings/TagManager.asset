@@ -8,6 +8,12 @@ TagManager:
   - Button
   - Tongue
   - Key
+  - blue button
+  - red button
+  - green button
+  - blue crate
+  - red crate
+  - green crate
   layers:
   - Default
   - TransparentFX

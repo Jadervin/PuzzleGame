@@ -43,18 +43,50 @@ public class ButtonScript : MonoBehaviour
    
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag=="Crate")
+        if (collision.gameObject.tag=="blue crate")
         {
-            buttonAnim.SetBool("ButtonPress", true);
-            Debug.Log("Animation Bool Play");
-            GameObject temp = 
-                Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
+            if (this.gameObject.tag=="blue button")
+            {
+                buttonAnim.SetBool("ButtonPress", true);
+                Debug.Log("Animation Bool Play");
+                GameObject temp =
+                    Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
+            }
 
             //buttonAnim.SetTrigger("Press");
            //Debug.Log("Animation Trigger Play");
+
         }
 
-        
+        if (collision.gameObject.tag == "red crate")
+        {
+            if (this.gameObject.tag == "red button")
+            {
+                buttonAnim.SetBool("ButtonPress", true);
+                Debug.Log("Animation Bool Play");
+                GameObject temp =
+                    Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
+            }
+
+            //buttonAnim.SetTrigger("Press");
+            //Debug.Log("Animation Trigger Play");
+
+        }
+
+        if (collision.gameObject.tag == "green crate")
+        {
+            if (this.gameObject.tag == "green button")
+            {
+                buttonAnim.SetBool("ButtonPress", true);
+                Debug.Log("Animation Bool Play");
+                GameObject temp =
+                    Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
+            }
+
+            //buttonAnim.SetTrigger("Press");
+            //Debug.Log("Animation Trigger Play");
+
+        }
     }
     
 
