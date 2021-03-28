@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 1604790270}
   - component: {fileID: 1604790269}
   m_Layer: 5
-  m_Name: Start Over
+  m_Name: Next Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 591f2f80231dd95418defe835732fcc9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e404b30c26792948aeb2411e3a41842, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05dc2ec2241f3694ca3d9214d9a98ec3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6214c3dbe80cf464e81250ba8aeb70d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
