@@ -5,8 +5,9 @@ using UnityEngine;
 public class TongueScript : MonoBehaviour
 {
     public Animator tongueAnim;
-
-    
+    public AudioSource soundSource;
+    public AudioClip tongueStretchSound;
+    public AudioClip tongueDestretchSound;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class TongueScript : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            
+            soundSource.PlayOneShot(tongueStretchSound);
             tongueAnim.SetBool("IsStretched", true);
             Debug.Log("Tongue Stretched");
         }
@@ -30,6 +31,7 @@ public class TongueScript : MonoBehaviour
         
         else if (Input.GetKeyDown("tab"))
         {
+            soundSource.PlayOneShot(tongueDestretchSound);
             tongueAnim.SetBool("IsStretched", false);
             Debug.Log("Tongue De-Stretched");
         }

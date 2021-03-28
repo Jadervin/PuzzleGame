@@ -1881,6 +1881,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tongueAnim: {fileID: 2489683700871570712}
+  soundSource: {fileID: 0}
+  tongueStretchSound: {fileID: 8300000, guid: 8b3d47549cd35bf4aa525c67507f2b4b, type: 3}
+  tongueDestretchSound: {fileID: 8300000, guid: b6d020d132329ed4d921255995cf9d05, type: 3}
 --- !u!1 &3615261742760915264
 GameObject:
   m_ObjectHideFlags: 0

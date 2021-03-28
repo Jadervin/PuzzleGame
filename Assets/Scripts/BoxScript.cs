@@ -14,6 +14,9 @@ public class BoxScript : MonoBehaviour
     Vector3 lastTonguePosition;
     Transform originalTongueParent;
 
+    public AudioSource soundSource;
+    public AudioClip pushingSound;
+
     //public Animator buttonAnim;
 
 
@@ -29,6 +32,7 @@ public class BoxScript : MonoBehaviour
     {
         if (isParented)
         {
+            
             Vector3 movementVec = player.position - lastPlayerPosition;
             Vector3 directionVec = transform.position - player.position;
 
@@ -45,6 +49,7 @@ public class BoxScript : MonoBehaviour
 
         if (isTongueParented)
         {
+            
             Vector3 movementVec = tongue.position - lastTonguePosition;
             Vector3 directionVec = transform.position - tongue.position;
 
@@ -67,6 +72,7 @@ public class BoxScript : MonoBehaviour
     {
         if (!isParented && collider.CompareTag("Player"))
         {
+            soundSource.PlayOneShot(pushingSound);
             player = collider.transform;
             transform.SetParent(player);
             isParented = true;
@@ -75,6 +81,7 @@ public class BoxScript : MonoBehaviour
 
        if (!isTongueParented&& collider.CompareTag("Tongue"))
         {
+            soundSource.PlayOneShot(pushingSound);
             tongue = collider.transform;
             transform.SetParent(tongue);
             isTongueParented = true;

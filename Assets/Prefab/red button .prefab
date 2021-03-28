@@ -149,6 +149,8 @@ MonoBehaviour:
   buttonAnim: {fileID: 6176928035688377004}
   spawnPosition: {fileID: 0}
   keyPrefab: {fileID: 1462112137170038177, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
+  soundSource: {fileID: 0}
+  buttonPress: {fileID: 8300000, guid: c6a725bcb90d99c4e9fa5032f3c696c5, type: 3}
 --- !u!65 &2714043577941246062
 BoxCollider:
   m_ObjectHideFlags: 0

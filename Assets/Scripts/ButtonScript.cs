@@ -9,6 +9,9 @@ public class ButtonScript : MonoBehaviour
     public Transform spawnPosition;
     public GameObject keyPrefab;
 
+    public AudioSource soundSource;
+    public AudioClip buttonPress;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,8 @@ public class ButtonScript : MonoBehaviour
         {
             if (this.gameObject.tag=="blue button")
             {
+
+                soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
                 GameObject temp =
@@ -62,6 +67,7 @@ public class ButtonScript : MonoBehaviour
         {
             if (this.gameObject.tag == "red button")
             {
+                soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
                 GameObject temp =
@@ -77,6 +83,7 @@ public class ButtonScript : MonoBehaviour
         {
             if (this.gameObject.tag == "green button")
             {
+                soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
                 GameObject temp =

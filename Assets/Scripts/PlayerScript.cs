@@ -12,26 +12,37 @@ public class PlayerScript : EntityScript
     public float invincibilityTime = 3;
     bool isInvincibile = false;
     public int keyAmount;
-    
-
     public Vector3 lastPosition;
 
+    public AudioSource keySoundSource;
+    public AudioSource doorSoundSource;
+    public AudioSource itemSoundSource;
+
+    public AudioClip keyCollectSound;
+    public AudioClip doorExplosion;
+    public AudioClip itemCollectSound;
 
     public KeyCollect collect;
 
     public GameObject door;
     public string youWin;
 
+    public float waitTime=2;
+
     new private void Start()
     {
         base.Start();
-       
+        
+        
+
     }
 
     private void Update()
     {
         if (collect.currentkeyAmount>=3)
         {
+            StartCoroutine(Wait(waitTime));
+            doorSoundSource.PlayOneShot(doorExplosion);
             Destroy(door);
         }
     }
@@ -54,12 +65,16 @@ public class PlayerScript : EntityScript
     {
         if (other.CompareTag("Key"))
         {
+            keySoundSource.PlayOneShot(keyCollectSound);
             GetKey();
             Destroy(other.gameObject);
         }
 
         if (other.CompareTag("Win"))
         {
+            itemSoundSource.PlayOneShot(itemCollectSound);
+            Destroy(other.gameObject);
+            StartCoroutine(Wait(waitTime));
             SceneManager.LoadScene(youWin);
         }
     }
@@ -75,5 +90,12 @@ public class PlayerScript : EntityScript
     {
         collect.currentkeyAmount =
             collect.currentkeyAmount + collect.getKeyAmount;
+    }
+
+    IEnumerator Wait(float duration)
+    {
+
+        yield return new WaitForSeconds(duration);   //Wait
+
     }
 }
