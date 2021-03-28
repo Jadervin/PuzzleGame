@@ -53,6 +53,7 @@ public class PlayerScript : EntityScript
 
     void GetKey()
     {
-        KeyCollect.Instance.currentkeyAmount += KeyCollect.Instance.getKeyAmount;
+        KeyCollect.Instance.currentkeyAmount =
+            KeyCollect.Instance.currentkeyAmount + KeyCollect.Instance.getKeyAmount;
     }
 }

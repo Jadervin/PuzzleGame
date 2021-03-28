@@ -15,8 +15,8 @@ public class PlayerDisplay : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-      
-        //CurrencyDisplay.text = CurrencyScript.Instance.balance.ToString();
+
+        //KeyDisplay.text = KeyCollect.Instance.currentkeyAmount.ToString();
     }
 
     // Update is called once per frame
