@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : EntityScript
 {
@@ -28,7 +29,7 @@ public class PlayerScript : EntityScript
 
     private void Update()
     {
-        if (collect.currentkeyAmount==1)
+        if (collect.currentkeyAmount==3)
         {
             Destroy(door);
         }
@@ -54,6 +55,11 @@ public class PlayerScript : EntityScript
         {
             GetKey();
             Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("Win"))
+        {
+            
         }
     }
 
