@@ -12,6 +12,10 @@ public class PlayerDisplay : MonoBehaviour
 
     private int healthDisplayed = 0;
 
+
+    public KeyCollect collect;
+    //public PlayerScript keyCollectConnect;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -29,7 +33,7 @@ public class PlayerDisplay : MonoBehaviour
 
         }
 
-        KeyDisplay.text = KeyCollect.Instance.currentkeyAmount.ToString();
+        KeyDisplay.text = collect.currentkeyAmount.ToString();
     }
 
     void DisplayHealth()

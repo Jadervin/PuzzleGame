@@ -15,6 +15,9 @@ public class PlayerScript : EntityScript
 
     public Vector3 lastPosition;
 
+
+    public KeyCollect collect;
+
     new private void Start()
     {
         base.Start();
@@ -53,7 +56,7 @@ public class PlayerScript : EntityScript
 
     void GetKey()
     {
-        KeyCollect.Instance.currentkeyAmount =
-            KeyCollect.Instance.currentkeyAmount + KeyCollect.Instance.getKeyAmount;
+        collect.currentkeyAmount =
+            collect.currentkeyAmount + collect.getKeyAmount;
     }
 }

@@ -1976,6 +1976,7 @@ MonoBehaviour:
   healthParent: {fileID: 2024285826}
   healthIconPrefab: {fileID: 559428373604746068, guid: 0d8361d664c4bf041ba57d4ae9ec961b, type: 3}
   player: {fileID: 885558713}
+  collect: {fileID: 7831248296104128797, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
 --- !u!1001 &1372995131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3519,6 +3520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: collect
+      value: 
+      objectReference: {fileID: 7831248296104128797, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
     - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
       propertyPath: m_RootOrder
       value: 1
