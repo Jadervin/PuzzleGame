@@ -136,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 6730954218935891323}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 558.5, y: 0.5, z: -32.94133}
-  m_LocalScale: {x: 5.541671, y: 5.5416703, z: 5.5416703}
+  m_LocalScale: {x: 5.5416713, y: 5.54167, z: 5.54167}
   m_Children:
   - {fileID: 4789839415446653374}
   - {fileID: 6943392715071069927}
@@ -233,6 +233,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6206795501588148161}
     m_Modifications:
+    - target: {fileID: 4896997108091170432, guid: 47ebe7ed797756b4e9715b301c15946b, type: 3}
+      propertyPath: laserSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 75b3844b0c69c674c914c66554938109, type: 3}
     - target: {fileID: 8033304143507185122, guid: 47ebe7ed797756b4e9715b301c15946b, type: 3}
       propertyPath: m_Name
       value: Gun 2 1
