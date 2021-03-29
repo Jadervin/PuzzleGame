@@ -30,6 +30,9 @@ public class PlayerScript : EntityScript
 
     public float waitTime=2;
 
+    public HitBoxScript hit;
+    public string youLose;
+
     new private void Start()
     {
         base.Start();
@@ -65,6 +68,31 @@ public class PlayerScript : EntityScript
 
     private void OnTriggerEnter(Collider other)
     {
+
+        HitBoxScript hit;
+
+        if (other.CompareTag("Rat"))
+        {
+            if (!isInvincibile && other.TryGetComponent<HitBoxScript>(out hit))
+            {
+                Damage((uint)hit.damage);
+
+                if (HP <= 0)
+                {
+                    //Instantiate(particle, this.transform.position, Quaternion.identity);
+                    Destroy(this.gameObject);
+                    SceneManager.LoadScene(youLose);
+
+                }
+                else
+                {
+
+                    StartCoroutine(playerInvincibility());
+                }
+            }
+
+        }
+
         if (other.CompareTag("Key"))
         {
             keySoundSource.PlayOneShot(keyCollectSound);
@@ -100,4 +128,6 @@ public class PlayerScript : EntityScript
         yield return new WaitForSeconds(duration);   //Wait
 
     }
+
+    
 }

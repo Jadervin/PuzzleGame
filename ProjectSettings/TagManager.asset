@@ -16,6 +16,8 @@ TagManager:
   - green crate
   - door
   - Win
+  - Laser
+  - Rat
   layers:
   - Default
   - TransparentFX
