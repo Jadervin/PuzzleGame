@@ -1833,9 +1833,17 @@ MonoBehaviour:
   invincibilityTime: 3
   keyAmount: 0
   lastPosition: {x: 0, y: 0, z: 0}
+  keySoundSource: {fileID: 0}
+  doorSoundSource: {fileID: 0}
+  itemSoundSource: {fileID: 0}
+  keyCollectSound: {fileID: 8300000, guid: 6b931273f410c16498bf65207829b661, type: 3}
+  doorExplosion: {fileID: 8300000, guid: c30819a39919fac40b62881463abf35d, type: 3}
+  itemCollectSound: {fileID: 8300000, guid: 6bbf766dabb63eb4dab72b1e235a1d0c, type: 3}
   collect: {fileID: 7831248296104128797, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
+  doorExplode: {fileID: 7074951875977169484, guid: 97733bea42eecf74d98e1a1e7737aae1, type: 3}
   door: {fileID: 0}
   youWin: Stage Beat 1
+  waitTime: 2
 --- !u!65 &2489683700871570710
 BoxCollider:
   m_ObjectHideFlags: 0

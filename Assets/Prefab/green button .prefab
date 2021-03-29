@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonAnim: {fileID: 9029562818365215135}
+  spawn: {fileID: 1936509128465955445, guid: 3743c73747e56dc449cbc46342030f5a, type: 3}
   spawnPosition: {fileID: 0}
   keyPrefab: {fileID: 1462112137170038177, guid: d639ecbe41384da41881bdd6f1cbd54e, type: 3}
   soundSource: {fileID: 0}

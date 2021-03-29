@@ -129,3 +129,5 @@ MonoBehaviour:
   isParented: 0
   tongue: {fileID: 0}
   isTongueParented: 0
+  soundSource: {fileID: 0}
+  pushingSound: {fileID: 8300000, guid: 61e408734eef0204ca4184e3f915a533, type: 3}
