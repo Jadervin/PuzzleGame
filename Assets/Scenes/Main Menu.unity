@@ -225,6 +225,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &476549132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8604582819718165088, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_Name
+      value: Music Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165089, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c0ca68be0f16f34387d11f5c783766d, type: 3}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98.67059
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 379.71664
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.713699
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604582819718165103, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e2156c1aad35534080652a5b1fc3bf0, type: 3}
 --- !u!1 &514517704
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSceneName: Instructions
   Menu: Main Menu
-  Credits: Instructions
+  Credits: Credits
   soundSource: {fileID: 982404846}
   menuClick: {fileID: 8300000, guid: 4e2ad80d21e37de44b0cb46f3d13f750, type: 3}
   clickTimer: 2

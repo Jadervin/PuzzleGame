@@ -4834,3 +4834,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b8abce84e0b684ea702e3e4614729e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  youLose: You Lose
