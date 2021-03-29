@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LaserCollision : MonoBehaviour
 {
+    //public ParticleSystem laser;
     public string youLose;
 
     // Start is called before the first frame update
@@ -19,10 +20,12 @@ public class LaserCollision : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnParticleCollision(GameObject collision)
     {
+        //Debug.Log("Touched Player");
         if (collision.gameObject.tag == ("Player"))
         {
+            Debug.Log("Touched Player");
             Destroy(collision.gameObject);
             //Instantiate(gitsEffect, transform.position, Quaternion.identity);
             SceneManager.LoadScene(youLose);
@@ -45,4 +48,7 @@ public class LaserCollision : MonoBehaviour
         }
 
     }
+
+
+    
 }
