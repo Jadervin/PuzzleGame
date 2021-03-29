@@ -18,6 +18,8 @@ TagManager:
   - Win
   - Laser
   - Rat
+  - Barrier
+  - Lose
   layers:
   - Default
   - TransparentFX

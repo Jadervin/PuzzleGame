@@ -61,7 +61,15 @@ public class EnemyScript : EntityScript
         }
     }
 
-
+    [System.Obsolete]
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag=="Barrier")
+        {
+            pursuing = false;
+            pathfinding.Stop();
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
 

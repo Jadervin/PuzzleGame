@@ -176,8 +176,8 @@ MonoBehaviour:
   HP: 0
   speed: 10
   pathfinding: {fileID: 5879311004401951565}
-  eyes: {fileID: 0}
-  visionRange: 3.9
+  eyes: {fileID: 27178948397015637}
+  visionRange: 30
   pursuing: 0
   hurtTag: Player
 --- !u!114 &770569622469365613

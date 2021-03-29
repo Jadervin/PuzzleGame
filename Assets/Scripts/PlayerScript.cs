@@ -107,6 +107,13 @@ public class PlayerScript : EntityScript
             StartCoroutine(Wait(waitTime));
             SceneManager.LoadScene(youWin);
         }
+        if (other.CompareTag("Lose"))
+        {
+            
+            Destroy(this.gameObject);
+            StartCoroutine(Wait(waitTime));
+            SceneManager.LoadScene(youLose);
+        }
     }
 
     IEnumerator playerInvincibility()
