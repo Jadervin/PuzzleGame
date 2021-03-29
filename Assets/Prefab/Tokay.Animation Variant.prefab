@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &50974588172232664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: youWin
+      value: Stage Beat 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: keySoundSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: doorSoundSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: itemSoundSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565355, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_Size.y
+      value: 12.429241
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565355, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_Center.x
+      value: -0.5874362
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565355, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_Center.y
+      value: 6.427187
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700822565355, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_Center.z
+      value: -1.8862581
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489683700871570713, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: soundSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 505.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8750534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -187.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.02219006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9997538
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -177.457
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668272140687221016, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336124932886887330, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: m_Name
+      value: Tokay.Animation
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
