@@ -24,6 +24,7 @@ public class PlayerScript : EntityScript
 
     public KeyCollect collect;
 
+    public ParticleSystem doorExplode;
     public GameObject door;
     public string youWin;
 
@@ -42,6 +43,7 @@ public class PlayerScript : EntityScript
         if (collect.currentkeyAmount>=3)
         {
             StartCoroutine(Wait(waitTime));
+            Instantiate(doorExplode, door.transform.position, Quaternion.identity);
             doorSoundSource.PlayOneShot(doorExplosion);
             Destroy(door);
         }

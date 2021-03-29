@@ -4733,6 +4733,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1920236717}
     m_Modifications:
     - target: {fileID: 3103590930691440854, guid: fdb0eae985b0c804ca678f7d54310547, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1936509128465955445, guid: 3743c73747e56dc449cbc46342030f5a, type: 3}
+    - target: {fileID: 3103590930691440854, guid: fdb0eae985b0c804ca678f7d54310547, type: 3}
       propertyPath: soundSource
       value: 
       objectReference: {fileID: 925311369}
@@ -4871,6 +4875,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
+      propertyPath: doorExplode
+      value: 
+      objectReference: {fileID: 7074951875977169484, guid: 97733bea42eecf74d98e1a1e7737aae1, type: 3}
+    - target: {fileID: 2489683700822565351, guid: 6338ad4c4dfed0242907727a7ec51c25, type: 3}
       propertyPath: soundSource
       value: 
       objectReference: {fileID: 1952982260}
@@ -4963,6 +4971,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1920236717}
     m_Modifications:
+    - target: {fileID: 280774977372584933, guid: 550b8aed24e0ce54bbcaccbaa7fc6505, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1936509128465955445, guid: 3743c73747e56dc449cbc46342030f5a, type: 3}
     - target: {fileID: 280774977372584933, guid: 550b8aed24e0ce54bbcaccbaa7fc6505, type: 3}
       propertyPath: soundSource
       value: 
@@ -5190,6 +5202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7879386705237938161, guid: 362833449410b6345a981b689d0e1107, type: 3}
+      propertyPath: spawn
+      value: 
+      objectReference: {fileID: 1936509128465955445, guid: 3743c73747e56dc449cbc46342030f5a, type: 3}
     - target: {fileID: 7879386705237938161, guid: 362833449410b6345a981b689d0e1107, type: 3}
       propertyPath: soundSource
       value: 

@@ -56,6 +56,7 @@ public class ButtonScript : MonoBehaviour
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
 
+                Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
             }
@@ -72,6 +73,8 @@ public class ButtonScript : MonoBehaviour
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
+
+                Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
             }
@@ -88,6 +91,8 @@ public class ButtonScript : MonoBehaviour
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
+
+                Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
             }
