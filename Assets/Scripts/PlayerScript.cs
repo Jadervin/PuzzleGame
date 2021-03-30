@@ -28,10 +28,11 @@ public class PlayerScript : EntityScript
     public GameObject door;
     public string youWin;
 
-    public float waitTime=2;
+    public float waitTime=3;
 
     public HitBoxScript hit;
     public string youLose;
+    public ParticleSystem playerExplosion;
 
     new private void Start()
     {
@@ -45,7 +46,7 @@ public class PlayerScript : EntityScript
     {
         if (collect.currentkeyAmount>=3)
         {
-            StartCoroutine(Wait(waitTime));
+            //StartCoroutine(Wait(waitTime));
             Instantiate(doorExplode, door.transform.position, Quaternion.identity);
             doorSoundSource.PlayOneShot(doorExplosion);
             Destroy(door);
@@ -111,6 +112,7 @@ public class PlayerScript : EntityScript
         {
             
             Destroy(this.gameObject);
+            Instantiate(doorExplode, door.transform.position, Quaternion.identity);
             StartCoroutine(Wait(waitTime));
             SceneManager.LoadScene(youLose);
         }

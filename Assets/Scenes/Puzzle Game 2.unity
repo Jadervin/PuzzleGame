@@ -501,6 +501,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8656174536466954952, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8656174536466954955, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1091,6 +1095,10 @@ PrefabInstance:
     - target: {fileID: 8568289991730698278, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
       propertyPath: m_Name
       value: blue Metal Crate  1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802786334453314089, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8802786334453314090, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
       propertyPath: m_IsTrigger
@@ -2362,7 +2370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 287765737587713347, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 321127852213130742, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
       propertyPath: m_RootOrder
@@ -5592,6 +5600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2465785927587857969, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
+      propertyPath: speed
+      value: 22.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2465785927587857971, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
       propertyPath: m_Size.x
       value: 9.728399
@@ -5640,6 +5652,10 @@ PrefabInstance:
       propertyPath: itemSoundSource
       value: 
       objectReference: {fileID: 2060446600}
+    - target: {fileID: 2465785927587857983, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
+      propertyPath: playerExplosion
+      value: 
+      objectReference: {fileID: 7074951875977169484, guid: 6a6ff2557bb68d349954eccb51d18090, type: 3}
     - target: {fileID: 2465785928041644737, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
       propertyPath: soundSource
       value: 

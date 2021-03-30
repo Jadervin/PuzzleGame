@@ -2274,7 +2274,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2465785927587857969, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
       propertyPath: speed
-      value: 27
+      value: 22.6
       objectReference: {fileID: 0}
     - target: {fileID: 2465785927587857983, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
       propertyPath: HP
@@ -2308,6 +2308,10 @@ PrefabInstance:
       propertyPath: itemSoundSource
       value: 
       objectReference: {fileID: 1356642738}
+    - target: {fileID: 2465785927587857983, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
+      propertyPath: playerExplosion
+      value: 
+      objectReference: {fileID: 7074951875977169484, guid: 6a6ff2557bb68d349954eccb51d18090, type: 3}
     - target: {fileID: 2465785928041644737, guid: 48bd9f5b90af13a468b3ec72467e647c, type: 3}
       propertyPath: soundSource
       value: 
