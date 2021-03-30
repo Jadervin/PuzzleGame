@@ -72,8 +72,8 @@ public class PlayerScript : EntityScript
 
         HitBoxScript hit;
 
-        if (other.CompareTag("Rat"))
-        {
+        
+        
             if (!isInvincibile && other.TryGetComponent<HitBoxScript>(out hit))
             {
                 Damage((uint)hit.damage);
@@ -92,7 +92,7 @@ public class PlayerScript : EntityScript
                 }
             }
 
-        }
+        
 
         if (other.CompareTag("Key"))
         {
