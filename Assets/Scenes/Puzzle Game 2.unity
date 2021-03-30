@@ -495,6 +495,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 243939674}
     m_Modifications:
     - target: {fileID: 921307316130470915, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 206364916}
+    - target: {fileID: 921307316130470915, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 197982623}
@@ -567,6 +571,11 @@ PrefabInstance:
 --- !u!4 &206364915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9199254925860702845, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
+  m_PrefabInstance: {fileID: 206364914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &206364916 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8656174536466954952, guid: f6f535f7a25672b49b50740d97e3ee4c, type: 3}
   m_PrefabInstance: {fileID: 206364914}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &231974440
@@ -1078,6 +1087,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 243939674}
     m_Modifications:
     - target: {fileID: 1062862121006044386, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 383097002}
+    - target: {fileID: 1062862121006044386, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 197982623}
@@ -1150,6 +1163,11 @@ PrefabInstance:
 --- !u!4 &383097001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9053219268070785692, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
+  m_PrefabInstance: {fileID: 383097000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &383097002 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8802786334453314089, guid: 05a290778d8f5b94c9011a68a45b5f87, type: 3}
   m_PrefabInstance: {fileID: 383097000}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &392119092
@@ -2406,6 +2424,10 @@ PrefabInstance:
       value: 'green Metal Crate '
       objectReference: {fileID: 0}
     - target: {fileID: 8581492088241750920, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 946093903}
+    - target: {fileID: 8581492088241750920, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 197982623}
@@ -2422,6 +2444,11 @@ PrefabInstance:
 --- !u!4 &946093902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 321127852213130742, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
+  m_PrefabInstance: {fileID: 946093901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &946093903 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 287765737587713347, guid: 232d9a5ec16fb4d46aa2cb20ee3ebd89, type: 3}
   m_PrefabInstance: {fileID: 946093901}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &988611066

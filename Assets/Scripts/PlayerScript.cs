@@ -7,6 +7,7 @@ public class PlayerScript : EntityScript
 {
     //public GameObject particle;
     public float force = 3;
+    public SkinnedMeshRenderer mesh;
 
     //public string hurtingTag= "Enemy";
     public float invincibilityTime = 3;
@@ -49,7 +50,8 @@ public class PlayerScript : EntityScript
             //StartCoroutine(Wait(waitTime));
             Instantiate(doorExplode, door.transform.position, Quaternion.identity);
             doorSoundSource.PlayOneShot(doorExplosion);
-            Destroy(door);
+            door.SetActive(false);
+            collect.currentkeyAmount = 0;
         }
     }
 
@@ -111,10 +113,10 @@ public class PlayerScript : EntityScript
         if (other.CompareTag("Lose"))
         {
             
-            Destroy(this.gameObject);
-            Instantiate(doorExplode, door.transform.position, Quaternion.identity);
+            mesh.GetComponent<SkinnedMeshRenderer>().enabled=false;
+            Instantiate(playerExplosion, this.transform.position, Quaternion.identity);
             StartCoroutine(Wait(waitTime));
-            SceneManager.LoadScene(youLose);
+            
         }
     }
 
@@ -135,7 +137,7 @@ public class PlayerScript : EntityScript
     {
 
         yield return new WaitForSeconds(duration);   //Wait
-
+        SceneManager.LoadScene(youLose);
     }
 
     

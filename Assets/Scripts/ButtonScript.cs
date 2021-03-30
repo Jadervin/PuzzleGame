@@ -12,6 +12,7 @@ public class ButtonScript : MonoBehaviour
 
     public AudioSource soundSource;
     public AudioClip buttonPress;
+    public bool isSpawned=false;
 
     // Start is called before the first frame update
     void Start()
@@ -45,20 +46,23 @@ public class ButtonScript : MonoBehaviour
    */
 
    
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
+        Debug.Log("Something");
         if (collision.gameObject.tag=="blue crate")
         {
-            if (this.gameObject.tag=="blue button")
+            Debug.Log("Blue Crate");
+            if (this.gameObject.tag=="blue button"&&isSpawned==false)
             {
-
+                Debug.Log("Press");
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
-
+                isSpawned = true;
                 Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
+
             }
 
             //buttonAnim.SetTrigger("Press");
@@ -68,13 +72,14 @@ public class ButtonScript : MonoBehaviour
 
         if (collision.gameObject.tag == "red crate")
         {
-            if (this.gameObject.tag == "red button")
+            if (this.gameObject.tag == "red button" && isSpawned == false)
             {
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
-
+                isSpawned = true;
                 Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
+                Destroy(spawnPosition);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);
             }
@@ -86,12 +91,12 @@ public class ButtonScript : MonoBehaviour
 
         if (collision.gameObject.tag == "green crate")
         {
-            if (this.gameObject.tag == "green button")
+            if (this.gameObject.tag == "green button" && isSpawned == false)
             {
                 soundSource.PlayOneShot(buttonPress);
                 buttonAnim.SetBool("ButtonPress", true);
                 Debug.Log("Animation Bool Play");
-
+                isSpawned = true;
                 Instantiate(spawn, spawnPosition.transform.position, spawn.transform.rotation);
                 GameObject temp =
                     Instantiate(keyPrefab, spawnPosition.position, keyPrefab.transform.rotation);

@@ -18,7 +18,7 @@ public class BoxScript : MonoBehaviour
     public AudioClip pushingSound;
 
     //public Animator buttonAnim;
-
+    public Rigidbody rb;
 
     private void Start()
     {
@@ -40,6 +40,7 @@ public class BoxScript : MonoBehaviour
                 || movementVec.z * directionVec.z < 0)
             {
                 isParented = false;
+                rb.isKinematic = false;
                 transform.SetParent(originalParent);
             }
 
@@ -52,8 +53,8 @@ public class BoxScript : MonoBehaviour
             //transform.LookAt(tongue, Vector3.left);
 
             
-            Vector3 movementVec = tongue.position - lastTonguePosition;
-            Vector3 directionVec = transform.position - tongue.position;
+            //Vector3 movementVec = tongue.position - lastTonguePosition;
+            //Vector3 directionVec = transform.position - tongue.position;
             /*
             if (movementVec.x * directionVec.x < 0
                 || movementVec.z * directionVec.z < 0)
@@ -79,6 +80,7 @@ public class BoxScript : MonoBehaviour
             player = collider.transform;
             transform.SetParent(player);
             isParented = true;
+            rb.isKinematic = true;
             lastPlayerPosition = player.position;
         }
 
@@ -88,6 +90,7 @@ public class BoxScript : MonoBehaviour
             tongue = collider.transform;
             transform.SetParent(tongue);
             isTongueParented = true;
+            rb.isKinematic = true;
             lastTonguePosition = tongue.position;
         }
     }
@@ -97,6 +100,7 @@ public class BoxScript : MonoBehaviour
         {
 
             isTongueParented = false;
+            rb.isKinematic = false;
             transform.SetParent(originalParent);
             
             lastTonguePosition = tongue.position;
