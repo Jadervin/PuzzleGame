@@ -5,35 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : EntityScript
 {
-    //public GameObject particle;
-    public float force = 3;
-    public SkinnedMeshRenderer mesh;
-
-    //public string hurtingTag= "Enemy";
-    public float invincibilityTime = 3;
+    
+    [Header("Booleans")]
     bool isInvincibile = false;
-    public int keyAmount;
-    public Vector3 lastPosition;
 
+    
+    [Header("Values")]
+     public float force = 3;
+    public Vector3 lastPosition;
+    public float waitTime=3;
+    public float invincibilityTime = 3;
+    public int keyAmount;
+
+
+    [Header ("Sound Sources")]
     public AudioSource keySoundSource;
     public AudioSource doorSoundSource;
     public AudioSource itemSoundSource;
+    //public AudioSource hitSoundSource;
 
+    [Header("Sound Clip")]
     public AudioClip keyCollectSound;
     public AudioClip doorExplosion;
     public AudioClip itemCollectSound;
+    //public AudioClip hitSound;
 
+    [Header("Object References")]
+    public GameObject door;
+    public SkinnedMeshRenderer mesh;
+
+    [Header("Scene Names")]
+    public string youWin;
+    public string youLose;
+
+    [Header("Script References")]
+    public HitBoxScript hit;
     public KeyCollect collect;
 
-    public ParticleSystem doorExplode;
-    public GameObject door;
-    public string youWin;
-
-    public float waitTime=3;
-
-    public HitBoxScript hit;
-    public string youLose;
+    [Header("Particles")]
     public ParticleSystem playerExplosion;
+    public ParticleSystem doorExplode;
+
 
     new private void Start()
     {
@@ -72,21 +84,23 @@ public class PlayerScript : EntityScript
     private void OnTriggerEnter(Collider other)
     {
 
+
+        //doorSoundSource.PlayOneShot(hitSound);
         HitBoxScript hit;
 
-        
-        
             if (!isInvincibile && other.TryGetComponent<HitBoxScript>(out hit))
             {
+
                 Damage((uint)hit.damage);
+                hitSoundSource.PlayOneShot(hitSound);
 
                 if (HP <= 0)
                 {
-                    //Instantiate(particle, this.transform.position, Quaternion.identity);
-                    Destroy(this.gameObject);
-                    SceneManager.LoadScene(youLose);
+                mesh.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                Instantiate(playerExplosion, this.transform.position, Quaternion.identity);
+                StartCoroutine(Wait(waitTime));
 
-                }
+            }
                 else
                 {
 
@@ -135,7 +149,6 @@ public class PlayerScript : EntityScript
 
     IEnumerator Wait(float duration)
     {
-
         yield return new WaitForSeconds(duration);   //Wait
         SceneManager.LoadScene(youLose);
     }

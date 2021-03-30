@@ -8,7 +8,8 @@ public class EntityScript : MonoBehaviour
     public int HP;
 
     public float speed;
-
+    public AudioSource hitSoundSource;
+    public AudioClip hitSound;
 
     protected void Start()
     {
@@ -23,6 +24,7 @@ public class EntityScript : MonoBehaviour
 
     public void Damage(uint dmg)
     {
+        hitSoundSource.PlayOneShot(hitSound);
         HP = HP - (int)dmg;
         //HP = Mathf.Clamp(HP - (int)dmg, 0, MaxHealth);
 
