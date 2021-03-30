@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8363d1650403c734b8f36263b4cfeaf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 42.6
   controller: {fileID: 2489683700822565352}
 --- !u!114 &2489683700822565351
 MonoBehaviour:
@@ -1844,6 +1844,8 @@ MonoBehaviour:
   door: {fileID: 0}
   youWin: Stage Beat 1
   waitTime: 2
+  hit: {fileID: 0}
+  youLose: You Lose
 --- !u!65 &2489683700871570710
 BoxCollider:
   m_ObjectHideFlags: 0

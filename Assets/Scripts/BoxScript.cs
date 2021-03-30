@@ -49,20 +49,23 @@ public class BoxScript : MonoBehaviour
 
         if (isTongueParented)
         {
+            //transform.LookAt(tongue, Vector3.left);
+
             
             Vector3 movementVec = tongue.position - lastTonguePosition;
             Vector3 directionVec = transform.position - tongue.position;
-
+            /*
             if (movementVec.x * directionVec.x < 0
                 || movementVec.z * directionVec.z < 0)
             {
                 isTongueParented = false;
-                transform.SetParent(originalTongueParent);
+                transform.SetParent(originalParent);
             }
-
+            */
 
             lastTonguePosition = tongue.position;
         }
+        
 
     }
 
@@ -85,6 +88,17 @@ public class BoxScript : MonoBehaviour
             tongue = collider.transform;
             transform.SetParent(tongue);
             isTongueParented = true;
+            lastTonguePosition = tongue.position;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (isTongueParented && other.CompareTag("Tongue"))
+        {
+
+            isTongueParented = false;
+            transform.SetParent(originalParent);
+            
             lastTonguePosition = tongue.position;
         }
     }
