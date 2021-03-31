@@ -13,13 +13,13 @@ public class MainMenuScript : MonoBehaviour
     public AudioSource soundSource;
     public AudioClip menuClick;
 
-    public float clickTimer = 10;
+    public float clickTimer = 0.5f;
 
     public void StartPressed()
     {
         soundSource.PlayOneShot(menuClick);
         StartCoroutine(Wait(clickTimer));
-        SceneManager.LoadScene(startSceneName);
+       
       
     
     
@@ -27,8 +27,8 @@ public class MainMenuScript : MonoBehaviour
     public void MenuPressed()
     {
         soundSource.PlayOneShot(menuClick);
-        StartCoroutine(Wait(clickTimer));
-        SceneManager.LoadScene(Menu);
+        StartCoroutine(Wait2(clickTimer));
+        
 
 
 
@@ -37,8 +37,8 @@ public class MainMenuScript : MonoBehaviour
     {
 
         soundSource.PlayOneShot(menuClick);
-        StartCoroutine(Wait(clickTimer));
-        SceneManager.LoadScene(Credits);
+        StartCoroutine(Wait3(clickTimer));
+        
 
 
 
@@ -47,8 +47,8 @@ public class MainMenuScript : MonoBehaviour
     {
 
         soundSource.PlayOneShot(menuClick);
-        StartCoroutine(Wait(clickTimer));
-        Application.Quit();
+        StartCoroutine(Wait4(clickTimer));
+        
 
 
     }
@@ -57,7 +57,29 @@ public class MainMenuScript : MonoBehaviour
     {
 
         yield return new WaitForSeconds(duration);   //Wait
-
+        SceneManager.LoadScene(startSceneName);
     }
 
+    IEnumerator Wait2(float duration)
+    {
+
+        yield return new WaitForSeconds(duration);   //Wait
+        SceneManager.LoadScene(Menu);
+    }
+
+
+    IEnumerator Wait3(float duration)
+    {
+
+        yield return new WaitForSeconds(duration);   //Wait
+        SceneManager.LoadScene(Credits);
+    }
+
+    IEnumerator Wait4(float duration)
+    {
+
+        yield return new WaitForSeconds(duration);   //Wait
+        Application.Quit();
+        
+    }
 }

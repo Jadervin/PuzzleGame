@@ -485,7 +485,7 @@ MonoBehaviour:
   Credits: Credits
   soundSource: {fileID: 476495495}
   menuClick: {fileID: 8300000, guid: 4e2ad80d21e37de44b0cb46f3d13f750, type: 3}
-  clickTimer: 10
+  clickTimer: 0.5
 --- !u!1001 &1365908180
 PrefabInstance:
   m_ObjectHideFlags: 0

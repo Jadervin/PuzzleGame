@@ -862,7 +862,7 @@ MonoBehaviour:
   Credits: Credits
   soundSource: {fileID: 1383479295}
   menuClick: {fileID: 0}
-  clickTimer: 2
+  clickTimer: 0.5
 --- !u!1 &2104132267
 GameObject:
   m_ObjectHideFlags: 0

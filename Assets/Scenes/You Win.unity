@@ -480,7 +480,7 @@ MonoBehaviour:
   Credits: Credits
   soundSource: {fileID: 1365908181}
   menuClick: {fileID: 0}
-  clickTimer: 2
+  clickTimer: 0.5
 --- !u!1001 &1365908180
 PrefabInstance:
   m_ObjectHideFlags: 0

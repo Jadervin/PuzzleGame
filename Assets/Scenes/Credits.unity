@@ -351,6 +351,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 4e2ad80d21e37de44b0cb46f3d13f750, type: 3}
     - target: {fileID: 7003560511762384640, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
+      propertyPath: clickTimer
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003560511762384640, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
       propertyPath: soundSource
       value: 
       objectReference: {fileID: 1093573477}

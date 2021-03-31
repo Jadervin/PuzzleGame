@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7177540311414540365, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 161.8901
+      value: 184.5
       objectReference: {fileID: 0}
     - target: {fileID: 7177540311414540365, guid: 12ca4b63b64ed8a4ab681a19777a8710, type: 3}
       propertyPath: m_LocalRotation.w
@@ -813,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264676965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.828247, y: 0.57, z: 100.8}
+  m_LocalPosition: {x: -23.828247, y: 0.57, z: 83.4}
   m_LocalScale: {x: 58.3883, y: 27.813107, z: 5.3191}
   m_Children: []
   m_Father: {fileID: 224677915}
@@ -973,7 +973,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328547635}
   m_LocalRotation: {x: 0.49779165, y: -0.50219864, z: 0.50219864, w: 0.49779165}
-  m_LocalPosition: {x: -4, y: 12, z: 241.6}
+  m_LocalPosition: {x: -4, y: 12, z: 226.90001}
   m_LocalScale: {x: 58.3883, y: 60.99136, z: 5.3191}
   m_Children: []
   m_Father: {fileID: 224677915}
@@ -1209,6 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 692247972860246210, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
+    - {fileID: 7003560511762384640, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
 --- !u!1 &615455673
 GameObject:
@@ -1237,7 +1238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615455673}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -33.3, y: 0.57, z: 241.4}
+  m_LocalPosition: {x: -33.3, y: 0.57, z: 226.7}
   m_LocalScale: {x: 58.3883, y: 27.813107, z: 5.3191}
   m_Children: []
   m_Father: {fileID: 224677915}
@@ -1320,22 +1321,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MenuPressed
       objectReference: {fileID: 0}
-    - target: {fileID: 3076165696392282077, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_Name
-      value: Background
-      objectReference: {fileID: 0}
-    - target: {fileID: 3076165696392282077, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3076165697051388884, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 70.03927
-      objectReference: {fileID: 0}
-    - target: {fileID: 3076165697051388884, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -221.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3076165697051388885, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1344,17 +1329,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: UnPause
       objectReference: {fileID: 0}
-    - target: {fileID: 3076165697051388886, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0052392b6ab44946b41be835da32b00, type: 3}
     - target: {fileID: 3076165697413466868, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
       propertyPath: m_Name
       value: Pause Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 3076165697413466868, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3076165697413466869, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
       propertyPath: m_Pivot.x
@@ -1440,14 +1417,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3831240484261254979, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c756407cda6e4b64f875be81acbe7442, type: 3}
-    - target: {fileID: 6333651413918012521, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 74f07f9ec26e487438cc2cba30d12788, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eed72b35ff8c6d4ca0a57386cdaed3b, type: 3}
 --- !u!1 &692056711
@@ -1695,7 +1664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2501,7 +2470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184113900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9, y: 0.57, z: 266.9}
+  m_LocalPosition: {x: -3.9, y: 0.57, z: 252.2}
   m_LocalScale: {x: 58.3883, y: 27.813107, z: 5.3191}
   m_Children: []
   m_Father: {fileID: 224677915}
@@ -3380,7 +3349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556972900}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.9, y: 0.57, z: 241.9}
+  m_LocalPosition: {x: 24.9, y: 0.57, z: 227.2}
   m_LocalScale: {x: 58.3883, y: 27.813107, z: 5.3191}
   m_Children: []
   m_Father: {fileID: 224677915}
@@ -4495,7 +4464,7 @@ MonoBehaviour:
   Credits: Credits
   soundSource: {fileID: 1267468979}
   menuClick: {fileID: 8300000, guid: 4e2ad80d21e37de44b0cb46f3d13f750, type: 3}
-  clickTimer: 2
+  clickTimer: 0.5
 --- !u!4 &2082382300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7159997579723628366, guid: 7136b407e82b1ae4f8966ae722f26dc6, type: 3}
@@ -4796,7 +4765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
